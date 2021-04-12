@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Final Project - Stefen Angga</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/img/favicon.png" rel="icon">
+  <link href="static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="static/vendor/owl.carousel/static/owl.carousel.min.css" rel="stylesheet">
+  <link href="static/vendor/venobox/venobox.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Eterna - v2.2.1
+  * Template URL: https://bootstrapmade.com/eterna-free-multipurpose-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-none d-lg-block">
+    <div class="container d-flex">
+      <div class="contact-info mr-auto">
+        Final Project by Stefen Angga
+      </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container d-flex">
+
+      <div class="logo mr-auto">
+        <h1 class="text-light"><a href="/"><span>FINAL PROJECT</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="home.html"><img src="static/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="/">Home</a></li>
+
+          <li class="drop-down"><a href="#">Data</a>
+            <ul>
+              <li><a href="/dataset">Dataset</a></li>
+              <li><a href="/data_visualization">Data Visualization</a></li>
+              <li><a href="/predict">Predict</a></li>
+            </ul>
+          </li>
+
+          <li><a href="/about">About</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li>Predict</li>
+        </ol>
+        <h2>Predict</h2>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+
+<style type= "text/css">
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+  .header-table{
+    width:1100px;
+    background-color: #404040;
+    margin: auto;
+    color: #FFFFFF;
+    padding: 10px 0px 10px 0px;
+    text-align:center;
+    border-radius: 15px 15px 0px 0px;
+    margin-top: 85px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15)
+  }
+  .container-fluid{
+    background-color:rgb(0,0,0,0.3);
+    width: 1100px;
+    margin: auto;
+    margin-top: -25px;
+    border-radius: 0px 0px 15px 15px;
+    padding: 15px 0px 0px 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15)
+  } 
+
+    form{
+      padding:10px;
+      margin-top:5px;
+    }
+  
+  .button{
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+.placeholder-pdays {
+  position: relative;
+  margin-left: 20px;
+  width: 140px;
+  text-align: right;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.placeholder-previous {
+  position: relative;
+  margin-left: 387px;
+  width: 140px;
+  text-align: right;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.placeholder-emprate {
+  position: relative;
+  margin-left: 39px;
+  width: 140px;
+  text-align: right;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.placeholder-price {
+  position: relative;
+  margin-left: 459px;
+  width: 140px;
+  text-align: right;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.placeholder-confidence {
+  position: relative;
+  margin-left: 399px;
+  width: 140px;
+  text-align: right;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.placeholder-euribor {
+  position: relative;
+  margin-left: 492px;
+  width: 140px;
+  text-align: right;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.placeholder-employed {
+  position: relative;
+  margin-left: 423px;
+  width: 140px;
+  text-align: right;
+  border-radius: 5px 5px 5px 5px;
+}
+</style>    
+<body>
+    <div class="header-table"><h1>Data Input</h1></div>"
+    <div class= 'container-fluid'>
+            <form method="POST" action= 'http://127.0.0.1:5000/result'>
+              <div id="pdays">
+            <h5><span class='bagde bagde-secondary'> How many days that passed by after the client was last contacted from a previous campaign? </span>
+                <input type='number' name='pdays' class="placeholder-pdays" step= '1' min= '0' max= '27' placeholder="input Pdays" required/> 
+            </h5>
+              </div>
+            <h5><span class='bagde bagde-secondary'> How many contacts performed before this campaign?</span>
+                <input type='number' name='previous' class="placeholder-previous" step= '1' min= '0' max= '7' placeholder="input Previous" required/> 
+            </h5>
+
+            <h5><span class='bagde bagde-secondary'> How much the difference between the current Employment Rate and the previous quarter?</span>
+                <input type='number' name='emp.var.rate' class="placeholder-emprate" step= '0.1' min= '-3.4' max= '1.4' placeholder="input Employed Variation Rate" required/> 
+            </h5>
+
+            <h5><span class='bagde bagde-secondary'> What is the Consumer Price Index this month?</span>
+                <input type='number' name='cons.price.idx' class="placeholder-price" step= '0.001' min= '92.201' max= '94.767' placeholder="input Consumer Price Index" required/> 
+            </h5>
+
+            <h5><span class='bagde bagde-secondary'> What is the Consumer Confidence Index this month?</span>
+                <input type='number' name='cons.conf.idx' class="placeholder-confidence" step= '0.0001' min= '-40.5026' max= '-26.9' placeholder="input Consumer Confidence Index" required/> 
+            </h5>
+
+            <h5><span class='bagde bagde-secondary'> What is the current Euribor rate (3 month)? </span>
+                <input type='number' name='euribor3m' class="placeholder-euribor" step= '0.001' min= '0.634' max= '5.045' placeholder="input Euro Interbank Offered Rate (3 month)" required/> 
+            </h5>
+
+            <h5><span class='bagde bagde-secondary'> how many people were employed in this country?</span>
+                <input type='number' name='nr.employed' class="placeholder-employed" step= '0.1' min= '4963.6' max= '5228.1' placeholder="input Number of Employed" required/> 
+            </h5>
+            <div class="button">
+            <button style="height:45px;width:150px;font-size:20px;text-align:center;line-height:20px;background-color:#e96b56;color:cornsilk; type= "button" ; class="btn btn-info">Predict</button>
+            </div>  
+          </form><br>
+    </div>
+
+<br><br><br><br><br><br>
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Eterna</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/eterna-free-multipurpose-bootstrap-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="static/vendor/jquery/jquery.min.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="static/vendor/php-email-form/validate.js"></script>
+  <script src="static/vendor/jquery-sticky/jquery.sticky.js"></script>
+  <script src="static/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="static/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="static/vendor/counterup/counterup.min.js"></script>
+  <script src="static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/vendor/venobox/venobox.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/js/main.js"></script>
+
+</body>
+
+</html>

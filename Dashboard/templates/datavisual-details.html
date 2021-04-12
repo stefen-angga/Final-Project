@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Final Project - Stefen Angga</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/img/favicon.png" rel="icon">
+  <link href="static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="static/vendor/owl.carousel/static/owl.carousel.min.css" rel="stylesheet">
+  <link href="static/vendor/venobox/venobox.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Eterna - v2.2.1
+  * Template URL: https://bootstrapmade.com/eterna-free-multipurpose-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<style>
+  li {
+    text-align: left;
+  }
+</style>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-none d-lg-block">
+    <div class="container d-flex">
+      <div class="contact-info mr-auto">
+        Final Project by Stefen Angga
+      </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container d-flex">
+
+      <div class="logo mr-auto">
+        <h1 class="text-light"><a href="/"><span>FINAL PROJECT</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="/"><img src="static/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="/">Home</a></li>
+
+          <li class="drop-down"><a href="#">Data</a>
+            <ul>
+              <li><a href="/dataset">Dataset</a></li>
+              <li><a href="/data_visualization">Data Visualization</a></li>
+              <li><a href="/predict">Predict</a></li>
+            </ul>
+          </li>
+
+          <li><a href="/about">About</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+<!-- ======= Features Section ======= -->
+<section id="features" class="features">
+  <div class="container">
+
+    <div class="section-title" style="margin-top: 50px;">
+      <h2>Problem Analysis</h2>
+      <p style="text-align: left;">Manajemen sebuah bank di portugal menerima laporan bahwa marketing campaign yang dilakukan telemarketer tidak efektif dan membuahkan hasil yang kurang memuaskan. Langkah yang dilakukan bank tsb adalah menganalisa data marketing campaign tsb dan membuat model prediksi dengan tujuan akhir mengefektifkan kinerja telemarketer dan meningkatkan hasil campaign tersebut yaitu client menempatkan uang nya di deposito berjangka. Hal-hal yang akan di analisa sebagai berikut:
+        <br><br>
+        <li>Apa faktor-faktor demographic yang mempengaruhi keputusan client?</li>
+        <li>Apa faktor-faktor internal bank yang mempengaruhi keputusan client?</li>
+        <li>Apa faktor-faktor eksternal bank yang mempengaruhi keputusan client?</li>
+      </p>
+    </div>
+    <br>
+    <br>
+    <div class="section-title">
+      <h3>Client Profiling</h3>
+    </div>
+
+      <img src="static/age-client.jpg">
+      <div class="container" data-aos-delay="100">
+        <ul>
+          <b>Kesimpulan:</b><br><br>
+          Client yang di telepon <b>mayoritas dari kelompok prime working age (25-54 tahun)</b>, dengan <b>persentase menempatkan uang di deposito terbesar yaitu dari kelompok umur elderly (65++ tahun)</b>. Kemungkinan terjadi <b>bias</b> karena jumlah kelompok elderly jauh lebih rendah dibanding kelompok umur lainnya. bisa dilihat dengan bertambah nya jumlah client, semakin kecil persentase kelompok
+          <br><br>
+          <b>Insight:</b><br><br>
+          Elderly & Early Working Age merupakan kelompok umur dengan persentase terbesar. Bank dapat menambah jumlah client yang ditelepon di kelompok umur tesebut.  
+        </ul>
+      </div>
+
+    <center><img src="static/education-client.jpg"></center>
+    <div class="container" data-aos-delay="100">
+      <ul>
+        <b>Kesimpulan:</b><br><br>
+        Dari segi pendidikan, terlihat bahwa ada kecenderungan <b>jika semakin tinggi pendidikan maka semakin tinggi juga persentase untuk mendepositkan uangnya (Kemungkinan karena literasi tentang keuangan lebih baik)</b>. Ada <b>sedikit bias</b> karena jumlah data, namun secara keseluruhan terlihat pola yang sama. 
+        <br><br>
+        <b>Insight:</b><br><br>
+        Bank dapat menawarkan lebih banyak ke client dengan pendidikan yang lebih tinggi.
+      </ul>
+    </div>
+    
+    <center><img src="static/job-client.jpg"></center>
+    <div class="container" data-aos-delay="100">
+      <ul>
+        <b>Kesimpulan:</b><br><br>
+        Client dengan <b>pekerjaan admin & technician merupakan yang terbanyak di telepon</b> dengan jumlah <b>target yes yang terbanyak</b> dibanding kelompok lain, secara persentase kedua pekerjaan tersebut cukup tinggi. Student & Retired memiliki persentase tertinggi kemungkinan karena ada nya <b>bias jumlah client yang sedikit</b>, atau kemungkinan yang lain <b>orang tua mendepositkan atas nama anaknya.</b>
+        <br><br>
+        <b>Insight:</b><br><br>
+        <b>Student & retired</b> merupakan pekerjaan dengan persentase terbesar. Bank dapat menambah jumlah client yang ditelepon di kelompok tesebut.
+      </ul>
+    </div><br><br><br>
+
+    <div class="section-title">
+      <h3>Internal Bank</h3>
+    </div>
+
+      <img src="static/duration-internbank.jpg">
+      <div class="container" data-aos-delay="100">
+        <ul>
+          <b>Kesimpulan:</b><br><br>
+          Terdapat pola dalam duration, semakin lama Duration semakin banyak yang medepositkan uang nya.
+          <br><br>
+          <b>Insight:</b><br><br>
+          Sebisa mungkin telemarketer dapat membuat percakapan yang lebih menarik, karena durasi saat menelepon sangat menentukan keputusan client.  
+        </ul>
+      </div>
+
+    <center><img src="static/previous-internbank.jpg"></center>
+    <div class="container" data-aos-delay="100">
+      <ul>
+        <b>Kesimpulan:</b><br><br>
+        Semakin banyak client dihubungi dicampaign sebelumnya, semakin tinggi kemungkinan client medepositkan uangnya.
+        <br><br>
+        <b>Insight:</b><br><br>
+        Kedepannya, bank dapat menelfon lebih dari 1 kali <i>(maksimal 6 kali)</i> client yang diprediksi akan mendepositkan uangnya.
+      </ul>
+    </div>
+
+    <center><img src="static/month-internbank.jpg"></center>
+    <div class="container" data-aos-delay="100">
+      <ul>
+        <b>Kesimpulan:</b><br><br>
+        Bulan Maret, April, September, October dan Desember memiliki persentase yang tinggi namun ada kemungkinan bias karena jumlah client yang di telepon sedikit.
+        <br><br>
+        <b>Insight:</b><br><br>
+        Untuk campaign selanjutnya, bank dapat menambah jumlah client yang dihubungi di bulan Maret, April, September, October dan Desember karena persentase di bulan tersebut cukup tinggi
+      </ul>
+    </div><br><br><br>
+
+    <div class="section-title">
+      <h3>External Bank</h3>
+      <b>Insight:</b><br><br>
+      Meskipun pengaruh eksternal bank terhadap keputusan client tinggi. Secara ekonomi, bank tidak bisa memilih melakukan hal-hal yang diinginkan karena diatur oleh bank central dan pemerintah. Contoh: saat terjadi deflasi dan market pesimis, banyak orang yang berinvestasi, secara bisnis kondisi tersebut adalah waktu yang tepat untuk menawarkan marketing campaign bank. Namun pemerintah akan mengeluarkan kebijakan moneter seperti bank central meminta semua bank untuk mengurangi suku bunga bank dll dengan tujuan mendorong masyarakat untuk menjajankan uangnya, ketimbang hanya membiarkannya di bank.
+    </div>
+ 
+      <img src="static/emp.var.rate-externbank.jpg">
+      <div class="container" data-aos-delay="100">
+        <ul>
+          <b>Definisi:</b><br><br>
+          Selisih per quarter employment rate. Employment rate adalah rasio jumlah pekerja dibagi jumlah populasi yang sudah siap bekerja (15 tahun keatas)
+          <br><br>
+          <b>Kesimpulan:</b><br><br>
+          Terlihat ketika <b>employment variation rate negatif, ada kecenderungan client mendepositkan uangnya dan sebaliknya.</b> Efek dari employment rate yang turun adalah dapat membuat market menjadi <b>pesimis (kemampuan masyarakat untuk belanja jadi turun)</b> dan memilih untuk <b>menabung atau menginvestasikan uangnya</b> ke instrumen keuangan seperti deposito, obligasi, saham, dll.
+          <br><br> 
+        </ul>
+      </div>
+
+    <center><img src="static/euribor3m-externbank.jpg"></center>
+    <div class="container" data-aos-delay="100">
+      <ul>
+        <b>Definisi:</b><br><br>
+          Selisih per quarter employment rate. Employment rate adalah rasio jumlah pekerja dibagi jumlah populasi yang sudah siap bekerja (15 tahun keatas)
+          <br><br>
+        <b>Kesimpulan:</b><br><br>
+        Terlihat jelas saat <b>euribor kecil, ada kecenderungan client mendepositkan uang nya.</b> Menurut <a href="https://media.neliti.com/media/publications/112844-ID-none.pdf">https://media.neliti.com/media/publications/112844-ID-none.pdf</a>, sebagai contoh, semakin tinggi suku bunga JIBOR <i>(Jakarta Interbank Offered Rate)</i> menyebabkan keinginan investor untuk melakukan investasi di bentuk investasi lain semakin kecil. Sebaliknya makin rendah suku bunga maka investor akan terdorong untuk melakukan investasi di bentuk lain, termasuk reksadana. Jadi makin rendah suku bunga akan meningkatkan permintaan terhadap reksadana, yang berarti semakin tinggi kinerja reksadana.
+        <br><br>
+      </ul>
+    </div>
+
+    <center><img src="static/nr.employed-externbank.jpg"></center>
+    <div class="container" data-aos-delay="100">
+      <ul>
+        <b>Definisi:</b><br><br>
+          Jumlah warga portugal yang bekerja
+          <br><br>
+        <b>Kesimpulan:</b><br><br>
+        Saat jumlah pekerja menurun, ada kecenderungan client mendepositkan uangnya dan sebaliknya. <- berhubungan dengan penjelasan di employment variation rate
+        <br><br>      
+      </ul>
+    </div><br><br><br>
+
+  </div>
+</section><!-- End Features Section -->
+ <!-- ======= Footer ======= -->
+ <footer id="footer">
+
+  <div class="container">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Eterna</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/eterna-free-multipurpose-bootstrap-template/ -->
+      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    </div>
+  </div>
+</footer><!-- End Footer -->
+
+<a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="static/vendor/jquery/jquery.min.js"></script>
+<script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="static/vendor/jquery.easing/jquery.easing.min.js"></script>
+<script src="static/vendor/php-email-form/validate.js"></script>
+<script src="static/vendor/jquery-sticky/jquery.sticky.js"></script>
+<script src="static/vendor/owl.carousel/owl.carousel.min.js"></script>
+<script src="static/vendor/waypoints/jquery.waypoints.min.js"></script>
+<script src="static/vendor/counterup/counterup.min.js"></script>
+<script src="static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="static/vendor/venobox/venobox.min.js"></script>
+
+<!-- Template Main JS File -->
+<script src="static/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,2614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Final Project - Stefen Angga</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/img/favicon.png" rel="icon">
+  <link href="static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="static/vendor/owl.carousel/static/owl.carousel.min.css" rel="stylesheet">
+  <link href="static/vendor/venobox/venobox.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Eterna - v2.2.1
+  * Template URL: https://bootstrapmade.com/eterna-free-multipurpose-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-none d-lg-block">
+    <div class="container d-flex">
+      <div class="contact-info mr-auto">
+        Final Project by Stefen Angga
+      </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container d-flex">
+
+      <div class="logo mr-auto">
+        <h1 class="text-light"><a href="/"><span>FINAL PROJECT</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="home.html"><img src="static/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="/">Home</a></li>
+
+          <li class="drop-down"><a href="#">Data</a>
+            <ul>
+              <li><a href="/dataset">Dataset</a></li>
+              <li><a href="/data_visualization">Data Visualization</a></li>
+              <li><a href="/predict">Predict</a></li>
+            </ul>
+          </li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+<style>
+  .content-table{
+      border-collapse: collapse;
+      margin: 25px 0;
+      font-size: 0.9em;
+      min-width: 400px;
+      border-radius: 5px 5px 0 0;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      font-family: "Open Sans", sans-serif;
+      margin: auto;
+      margin-bottom: 50px;
+  }
+
+  .content-table thead tr{
+      background-color: #e96b56;
+      color: white;
+      text-align: center;
+      font-weight: bold; 
+      font-family: "Open Sans", sans-serif;
+  }
+
+  .content-table th,
+  .content-table td {
+    padding: 7px 3px;
+  }
+
+  .content-table tbody tr{
+    border-bottom: 1px solid #dddddd;
+  }
+
+  .content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+
+  .content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #e96b56; 
+  }
+</style>
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li>Dataset</li>
+        </ol>
+        <h2>Dataset</h2>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+    <div class="container">
+    <p> It is a dataset that describing Portugal bank marketing campaigns results.
+      Conducted campaigns were based mostly on direct phone calls, offering bank client to place a term deposit.
+      If after all marking afforts client had agreed to place deposit - target variable marked 'yes', otherwise 'no'
+      <br><br>
+      Source of the data
+      <a href="https://archive.ics.uci.edu/ml/datasets/bank+marketing">
+      https://archive.ics.uci.edu/ml/datasets/bank+marketing
+      </a>
+      <br><br>
+      Number of Instances: 41188 for bank-additional-full.csv
+      <br><br>
+      Number of Attributes: 20 + output attribute.
+      <br><br>
+    </p>
+  </div>
+    <div>
+    <table class="content-table">
+      <thead>
+        <tr style="text-align: center;">
+          <th></th>
+          <th>age</th>
+          <th>job</th>
+          <th>marital</th>
+          <th>education</th>
+          <th>default</th>
+          <th>housing</th>
+          <th>loan</th>
+          <th>contact</th>
+          <th>month</th>
+          <th>day_of_week</th>
+          <th>duration</th>
+          <th>campaign</th>
+          <th>pdays</th>
+          <th>previous</th>
+          <th>poutcome</th>
+          <th>emp.var.rate</th>
+          <th>cons.price.idx</th>
+          <th>cons.conf.idx</th>
+          <th>euribor3m</th>
+          <th>nr.employed</th>
+          <th>y</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="text-align: center;">
+          <th>0</th>
+          <td>mature working age</td>
+          <td>housemaid</td>
+          <td>married</td>
+          <td>basic.4y</td>
+          <td>no</td>
+          <td>no</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>261</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>1</th>
+          <td>mature working age</td>
+          <td>services</td>
+          <td>married</td>
+          <td>high.school</td>
+          <td>unknown</td>
+          <td>no</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>149</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>2</th>
+          <td>prime working age</td>
+          <td>services</td>
+          <td>married</td>
+          <td>high.school</td>
+          <td>no</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>226</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>3</th>
+          <td>prime working age</td>
+          <td>admin.</td>
+          <td>married</td>
+          <td>basic.6y</td>
+          <td>no</td>
+          <td>no</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>151</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>4</th>
+          <td>mature working age</td>
+          <td>services</td>
+          <td>married</td>
+          <td>high.school</td>
+          <td>no</td>
+          <td>no</td>
+          <td>yes</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>307</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>5</th>
+          <td>prime working age</td>
+          <td>services</td>
+          <td>married</td>
+          <td>basic.9y</td>
+          <td>unknown</td>
+          <td>no</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>198</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>6</th>
+          <td>mature working age</td>
+          <td>admin.</td>
+          <td>married</td>
+          <td>professional.course</td>
+          <td>no</td>
+          <td>no</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>139</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>7</th>
+          <td>prime working age</td>
+          <td>blue-collar</td>
+          <td>married</td>
+          <td>unknown</td>
+          <td>unknown</td>
+          <td>no</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>217</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>8</th>
+          <td>early working age</td>
+          <td>technician</td>
+          <td>single</td>
+          <td>professional.course</td>
+          <td>no</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>380</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>9</th>
+          <td>prime working age</td>
+          <td>services</td>
+          <td>single</td>
+          <td>high.school</td>
+          <td>no</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>50</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>10</th>
+          <td>prime working age</td>
+          <td>blue-collar</td>
+          <td>married</td>
+          <td>unknown</td>
+          <td>unknown</td>
+          <td>no</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>55</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>11</th>
+          <td>prime working age</td>
+          <td>services</td>
+          <td>single</td>
+          <td>high.school</td>
+          <td>no</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>222</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>12</th>
+          <td>prime working age</td>
+          <td>blue-collar</td>
+          <td>single</td>
+          <td>high.school</td>
+          <td>no</td>
+          <td>no</td>
+          <td>yes</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>137</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>13</th>
+          <td>mature working age</td>
+          <td>housemaid</td>
+          <td>divorced</td>
+          <td>basic.4y</td>
+          <td>no</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>293</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>14</th>
+          <td>prime working age</td>
+          <td>blue-collar</td>
+          <td>married</td>
+          <td>basic.6y</td>
+          <td>no</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>146</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>15</th>
+          <td>prime working age</td>
+          <td>retired</td>
+          <td>married</td>
+          <td>basic.9y</td>
+          <td>unknown</td>
+          <td>yes</td>
+          <td>yes</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>174</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>16</th>
+          <td>prime working age</td>
+          <td>blue-collar</td>
+          <td>married</td>
+          <td>basic.6y</td>
+          <td>no</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>312</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>17</th>
+          <td>prime working age</td>
+          <td>blue-collar</td>
+          <td>married</td>
+          <td>basic.6y</td>
+          <td>unknown</td>
+          <td>yes</td>
+          <td>yes</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>440</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>18</th>
+          <td>prime working age</td>
+          <td>blue-collar</td>
+          <td>married</td>
+          <td>basic.9y</td>
+          <td>no</td>
+          <td>yes</td>
+          <td>yes</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>353</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>19</th>
+          <td>prime working age</td>
+          <td>management</td>
+          <td>single</td>
+          <td>basic.9y</td>
+          <td>unknown</td>
+          <td>no</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>195</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>20</th>
+          <td>prime working age</td>
+          <td>unemployed</td>
+          <td>married</td>
+          <td>high.school</td>
+          <td>no</td>
+          <td>no</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>38</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>21</th>
+          <td>mature working age</td>
+          <td>blue-collar</td>
+          <td>married</td>
+          <td>basic.4y</td>
+          <td>unknown</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>262</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>22</th>
+          <td>mature working age</td>
+          <td>retired</td>
+          <td>single</td>
+          <td>high.school</td>
+          <td>no</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>342</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>23</th>
+          <td>prime working age</td>
+          <td>technician</td>
+          <td>single</td>
+          <td>high.school</td>
+          <td>no</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>181</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>24</th>
+          <td>prime working age</td>
+          <td>admin.</td>
+          <td>married</td>
+          <td>high.school</td>
+          <td>no</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>172</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>25</th>
+          <td>prime working age</td>
+          <td>technician</td>
+          <td>married</td>
+          <td>university.degree</td>
+          <td>no</td>
+          <td>no</td>
+          <td>yes</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>99</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>26</th>
+          <td>mature working age</td>
+          <td>technician</td>
+          <td>married</td>
+          <td>unknown</td>
+          <td>no</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>93</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>27</th>
+          <td>prime working age</td>
+          <td>self-employed</td>
+          <td>married</td>
+          <td>basic.9y</td>
+          <td>unknown</td>
+          <td>no</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>233</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>28</th>
+          <td>prime working age</td>
+          <td>technician</td>
+          <td>single</td>
+          <td>university.degree</td>
+          <td>unknown</td>
+          <td>no</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>255</td>
+          <td>2</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>29</th>
+          <td>mature working age</td>
+          <td>unknown</td>
+          <td>married</td>
+          <td>university.degree</td>
+          <td>unknown</td>
+          <td>unknown</td>
+          <td>unknown</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>362</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>30</th>
+          <td>prime working age</td>
+          <td>admin.</td>
+          <td>married</td>
+          <td>unknown</td>
+          <td>no</td>
+          <td>no</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>348</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>31</th>
+          <td>mature working age</td>
+          <td>technician</td>
+          <td>married</td>
+          <td>unknown</td>
+          <td>no</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>386</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>32</th>
+          <td>prime working age</td>
+          <td>blue-collar</td>
+          <td>married</td>
+          <td>unknown</td>
+          <td>no</td>
+          <td>no</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>73</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>33</th>
+          <td>prime working age</td>
+          <td>management</td>
+          <td>married</td>
+          <td>basic.4y</td>
+          <td>unknown</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>230</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>34</th>
+          <td>prime working age</td>
+          <td>blue-collar</td>
+          <td>divorced</td>
+          <td>basic.4y</td>
+          <td>no</td>
+          <td>no</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>208</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>35</th>
+          <td>mature working age</td>
+          <td>unknown</td>
+          <td>married</td>
+          <td>basic.4y</td>
+          <td>unknown</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>336</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>36</th>
+          <td>prime working age</td>
+          <td>services</td>
+          <td>married</td>
+          <td>high.school</td>
+          <td>no</td>
+          <td>no</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>365</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>37</th>
+          <td>prime working age</td>
+          <td>technician</td>
+          <td>married</td>
+          <td>basic.9y</td>
+          <td>no</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>1666</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>38</th>
+          <td>prime working age</td>
+          <td>admin.</td>
+          <td>married</td>
+          <td>university.degree</td>
+          <td>no</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>577</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>39</th>
+          <td>mature working age</td>
+          <td>technician</td>
+          <td>married</td>
+          <td>basic.4y</td>
+          <td>no</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>137</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>40</th>
+          <td>mature working age</td>
+          <td>management</td>
+          <td>unknown</td>
+          <td>university.degree</td>
+          <td>no</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>366</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>41</th>
+          <td>prime working age</td>
+          <td>entrepreneur</td>
+          <td>married</td>
+          <td>high.school</td>
+          <td>no</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>314</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>42</th>
+          <td>prime working age</td>
+          <td>admin.</td>
+          <td>single</td>
+          <td>professional.course</td>
+          <td>no</td>
+          <td>no</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>160</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>43</th>
+          <td>mature working age</td>
+          <td>admin.</td>
+          <td>married</td>
+          <td>university.degree</td>
+          <td>no</td>
+          <td>no</td>
+          <td>yes</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>212</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>44</th>
+          <td>prime working age</td>
+          <td>admin.</td>
+          <td>married</td>
+          <td>university.degree</td>
+          <td>unknown</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>188</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>45</th>
+          <td>prime working age</td>
+          <td>technician</td>
+          <td>single</td>
+          <td>professional.course</td>
+          <td>unknown</td>
+          <td>no</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>22</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>46</th>
+          <td>mature working age</td>
+          <td>admin.</td>
+          <td>married</td>
+          <td>university.degree</td>
+          <td>no</td>
+          <td>yes</td>
+          <td>yes</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>616</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>47</th>
+          <td>prime working age</td>
+          <td>blue-collar</td>
+          <td>married</td>
+          <td>basic.9y</td>
+          <td>no</td>
+          <td>no</td>
+          <td>yes</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>178</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>48</th>
+          <td>prime working age</td>
+          <td>admin.</td>
+          <td>married</td>
+          <td>university.degree</td>
+          <td>no</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>355</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>49</th>
+          <td>prime working age</td>
+          <td>blue-collar</td>
+          <td>married</td>
+          <td>basic.9y</td>
+          <td>no</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>225</td>
+          <td>2</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>50</th>
+          <td>prime working age</td>
+          <td>admin.</td>
+          <td>married</td>
+          <td>high.school</td>
+          <td>no</td>
+          <td>no</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>160</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>51</th>
+          <td>prime working age</td>
+          <td>housemaid</td>
+          <td>married</td>
+          <td>basic.4y</td>
+          <td>no</td>
+          <td>no</td>
+          <td>yes</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>266</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>52</th>
+          <td>mature working age</td>
+          <td>admin.</td>
+          <td>married</td>
+          <td>high.school</td>
+          <td>no</td>
+          <td>no</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>253</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>53</th>
+          <td>prime working age</td>
+          <td>admin.</td>
+          <td>single</td>
+          <td>professional.course</td>
+          <td>no</td>
+          <td>no</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>179</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>54</th>
+          <td>mature working age</td>
+          <td>blue-collar</td>
+          <td>married</td>
+          <td>basic.4y</td>
+          <td>unknown</td>
+          <td>no</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>269</td>
+          <td>2</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>55</th>
+          <td>mature working age</td>
+          <td>technician</td>
+          <td>married</td>
+          <td>professional.course</td>
+          <td>unknown</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>135</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>56</th>
+          <td>prime working age</td>
+          <td>management</td>
+          <td>married</td>
+          <td>university.degree</td>
+          <td>unknown</td>
+          <td>no</td>
+          <td>yes</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>161</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>57</th>
+          <td>prime working age</td>
+          <td>services</td>
+          <td>married</td>
+          <td>high.school</td>
+          <td>unknown</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>787</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>58</th>
+          <td>mature working age</td>
+          <td>unemployed</td>
+          <td>married</td>
+          <td>professional.course</td>
+          <td>unknown</td>
+          <td>yes</td>
+          <td>yes</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>145</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>59</th>
+          <td>prime working age</td>
+          <td>technician</td>
+          <td>single</td>
+          <td>university.degree</td>
+          <td>no</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>174</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>60</th>
+          <td>prime working age</td>
+          <td>entrepreneur</td>
+          <td>married</td>
+          <td>university.degree</td>
+          <td>unknown</td>
+          <td>no</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>449</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>61</th>
+          <td>prime working age</td>
+          <td>blue-collar</td>
+          <td>married</td>
+          <td>basic.9y</td>
+          <td>no</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>812</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>62</th>
+          <td>prime working age</td>
+          <td>blue-collar</td>
+          <td>married</td>
+          <td>basic.6y</td>
+          <td>unknown</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>164</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>63</th>
+          <td>prime working age</td>
+          <td>blue-collar</td>
+          <td>married</td>
+          <td>basic.6y</td>
+          <td>unknown</td>
+          <td>no</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>366</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>64</th>
+          <td>prime working age</td>
+          <td>admin.</td>
+          <td>married</td>
+          <td>high.school</td>
+          <td>no</td>
+          <td>no</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>357</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>65</th>
+          <td>prime working age</td>
+          <td>admin.</td>
+          <td>married</td>
+          <td>university.degree</td>
+          <td>no</td>
+          <td>no</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>232</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>66</th>
+          <td>prime working age</td>
+          <td>blue-collar</td>
+          <td>single</td>
+          <td>basic.9y</td>
+          <td>no</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>91</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>67</th>
+          <td>prime working age</td>
+          <td>admin.</td>
+          <td>married</td>
+          <td>unknown</td>
+          <td>no</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>273</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>68</th>
+          <td>mature working age</td>
+          <td>admin.</td>
+          <td>married</td>
+          <td>basic.9y</td>
+          <td>no</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>158</td>
+          <td>2</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>69</th>
+          <td>prime working age</td>
+          <td>blue-collar</td>
+          <td>single</td>
+          <td>basic.4y</td>
+          <td>unknown</td>
+          <td>yes</td>
+          <td>yes</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>177</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>70</th>
+          <td>prime working age</td>
+          <td>management</td>
+          <td>married</td>
+          <td>basic.6y</td>
+          <td>no</td>
+          <td>no</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>200</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>71</th>
+          <td>prime working age</td>
+          <td>management</td>
+          <td>divorced</td>
+          <td>university.degree</td>
+          <td>no</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>172</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>72</th>
+          <td>prime working age</td>
+          <td>admin.</td>
+          <td>married</td>
+          <td>university.degree</td>
+          <td>unknown</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>176</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>73</th>
+          <td>mature working age</td>
+          <td>unknown</td>
+          <td>married</td>
+          <td>unknown</td>
+          <td>unknown</td>
+          <td>no</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>211</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>74</th>
+          <td>prime working age</td>
+          <td>admin.</td>
+          <td>married</td>
+          <td>university.degree</td>
+          <td>unknown</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>214</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>75</th>
+          <td>prime working age</td>
+          <td>blue-collar</td>
+          <td>divorced</td>
+          <td>basic.4y</td>
+          <td>unknown</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>1575</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>yes</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>76</th>
+          <td>mature working age</td>
+          <td>technician</td>
+          <td>married</td>
+          <td>university.degree</td>
+          <td>no</td>
+          <td>no</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>349</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>77</th>
+          <td>prime working age</td>
+          <td>services</td>
+          <td>married</td>
+          <td>high.school</td>
+          <td>unknown</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>337</td>
+          <td>2</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>78</th>
+          <td>mature working age</td>
+          <td>management</td>
+          <td>married</td>
+          <td>unknown</td>
+          <td>unknown</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>272</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>79</th>
+          <td>prime working age</td>
+          <td>blue-collar</td>
+          <td>married</td>
+          <td>basic.9y</td>
+          <td>unknown</td>
+          <td>no</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>208</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>80</th>
+          <td>prime working age</td>
+          <td>blue-collar</td>
+          <td>married</td>
+          <td>basic.4y</td>
+          <td>unknown</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>193</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>81</th>
+          <td>prime working age</td>
+          <td>blue-collar</td>
+          <td>married</td>
+          <td>basic.4y</td>
+          <td>unknown</td>
+          <td>unknown</td>
+          <td>unknown</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>212</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>82</th>
+          <td>prime working age</td>
+          <td>admin.</td>
+          <td>married</td>
+          <td>high.school</td>
+          <td>unknown</td>
+          <td>no</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>165</td>
+          <td>2</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>83</th>
+          <td>prime working age</td>
+          <td>entrepreneur</td>
+          <td>married</td>
+          <td>university.degree</td>
+          <td>unknown</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>1042</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>yes</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>84</th>
+          <td>prime working age</td>
+          <td>technician</td>
+          <td>single</td>
+          <td>university.degree</td>
+          <td>no</td>
+          <td>no</td>
+          <td>yes</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>20</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>85</th>
+          <td>prime working age</td>
+          <td>admin.</td>
+          <td>divorced</td>
+          <td>high.school</td>
+          <td>no</td>
+          <td>no</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>246</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>86</th>
+          <td>prime working age</td>
+          <td>management</td>
+          <td>married</td>
+          <td>basic.6y</td>
+          <td>no</td>
+          <td>no</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>529</td>
+          <td>2</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>87</th>
+          <td>prime working age</td>
+          <td>admin.</td>
+          <td>married</td>
+          <td>university.degree</td>
+          <td>no</td>
+          <td>yes</td>
+          <td>yes</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>192</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>88</th>
+          <td>prime working age</td>
+          <td>technician</td>
+          <td>married</td>
+          <td>basic.9y</td>
+          <td>no</td>
+          <td>no</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>1467</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>yes</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>89</th>
+          <td>prime working age</td>
+          <td>admin.</td>
+          <td>married</td>
+          <td>high.school</td>
+          <td>no</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>188</td>
+          <td>2</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>90</th>
+          <td>prime working age</td>
+          <td>admin.</td>
+          <td>married</td>
+          <td>university.degree</td>
+          <td>no</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>180</td>
+          <td>2</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>91</th>
+          <td>mature working age</td>
+          <td>unknown</td>
+          <td>married</td>
+          <td>unknown</td>
+          <td>unknown</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>48</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>92</th>
+          <td>mature working age</td>
+          <td>admin.</td>
+          <td>married</td>
+          <td>unknown</td>
+          <td>unknown</td>
+          <td>no</td>
+          <td>yes</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>213</td>
+          <td>2</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>93</th>
+          <td>prime working age</td>
+          <td>unemployed</td>
+          <td>married</td>
+          <td>basic.9y</td>
+          <td>no</td>
+          <td>no</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>545</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>94</th>
+          <td>prime working age</td>
+          <td>blue-collar</td>
+          <td>married</td>
+          <td>basic.6y</td>
+          <td>no</td>
+          <td>no</td>
+          <td>yes</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>583</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>95</th>
+          <td>prime working age</td>
+          <td>services</td>
+          <td>married</td>
+          <td>professional.course</td>
+          <td>no</td>
+          <td>yes</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>221</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>96</th>
+          <td>prime working age</td>
+          <td>management</td>
+          <td>married</td>
+          <td>university.degree</td>
+          <td>no</td>
+          <td>no</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>426</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>97</th>
+          <td>prime working age</td>
+          <td>admin.</td>
+          <td>divorced</td>
+          <td>university.degree</td>
+          <td>unknown</td>
+          <td>no</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>287</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>98</th>
+          <td>prime working age</td>
+          <td>technician</td>
+          <td>single</td>
+          <td>professional.course</td>
+          <td>no</td>
+          <td>no</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>197</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+        <tr style="text-align: center;">
+          <th>99</th>
+          <td>prime working age</td>
+          <td>blue-collar</td>
+          <td>married</td>
+          <td>basic.6y</td>
+          <td>no</td>
+          <td>no</td>
+          <td>no</td>
+          <td>telephone</td>
+          <td>may</td>
+          <td>mon</td>
+          <td>257</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>nonexistent</td>
+          <td>1.1</td>
+          <td>93.994</td>
+          <td>36.4</td>
+          <td>4.857</td>
+          <td>5191.0</td>
+          <td>no</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+ <!-- ======= Footer ======= -->
+ <footer id="footer">
+
+  <div class="container">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Eterna</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/eterna-free-multipurpose-bootstrap-template/ -->
+      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    </div>
+  </div>
+</footer><!-- End Footer -->
+
+<a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="static/vendor/jquery/jquery.min.js"></script>
+<script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="static/vendor/jquery.easing/jquery.easing.min.js"></script>
+<script src="static/vendor/php-email-form/validate.js"></script>
+<script src="static/vendor/jquery-sticky/jquery.sticky.js"></script>
+<script src="static/vendor/owl.carousel/owl.carousel.min.js"></script>
+<script src="static/vendor/waypoints/jquery.waypoints.min.js"></script>
+<script src="static/vendor/counterup/counterup.min.js"></script>
+<script src="static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="static/vendor/venobox/venobox.min.js"></script>
+
+<!-- Template Main JS File -->
+<script src="static/js/main.js"></script>
+
+</body>
+
+</html>
