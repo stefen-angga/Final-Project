@@ -67,7 +67,7 @@ The best model and method is **Logistic Regression with Random Under Sampler** w
 
 There is an increase in the score after tuning **70.776 -> 70.862 (+0.086)**
 
-## Feature Selection
+### Feature Selection:
 
 ![image](https://user-images.githubusercontent.com/75253940/114908398-42c46a80-9e46-11eb-9870-e5857d3f1e85.png)
 
@@ -75,8 +75,30 @@ drop *'age','education','marital','default','housing','day_of_week','month','job
 
 ![image](https://user-images.githubusercontent.com/75253940/114908584-6f788200-9e46-11eb-9305-e9a84a61c125.png)
 
+After feature selection, the running time is decrease from **0.717s -> 0.416s (-0.301s)**
+
+
+### Saving Model:
+
 ![image](https://user-images.githubusercontent.com/75253940/114908691-87500600-9e46-11eb-9632-bbeb92013bc3.png)
 
+### Model Deployment:
 
+![image](https://user-images.githubusercontent.com/75253940/114912612-68537300-9e4a-11eb-960e-6ef2b39ee4b9.png)
 
+![image](https://user-images.githubusercontent.com/75253940/114912575-5bcf1a80-9e4a-11eb-8d3a-c4f4f6b4849a.png)
+
+### Dashboard:
+
+**Home**
+![image](https://user-images.githubusercontent.com/75253940/114912867-b6687680-9e4a-11eb-8732-c6f82a15e227.png)
+
+**Dataset**
+![image](https://user-images.githubusercontent.com/75253940/114912994-dac45300-9e4a-11eb-9911-81c77311eb6a.png)
+
+**Data Visualization**
+![image](https://user-images.githubusercontent.com/75253940/114913093-fd566c00-9e4a-11eb-8035-1509d104a1e9.png)
+
+**About**
+![image](https://user-images.githubusercontent.com/75253940/114913161-12cb9600-9e4b-11eb-98c8-0a54e4a59aa9.png)
 
